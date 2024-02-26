@@ -6,3 +6,12 @@
 {{else}}
 <h3>Soy menor de edad</h3>
 {{/if}}
+
+{{#each productos}}
+    <div>
+        <h2>Nombre: {{this.nombre}} </h2>
+        <p>Marca: {{this.marca}} </p>
+        <p>Precio: {{this.precio}} </p>
+        <p>Categoria: {{this.categoria}} </p>
+    </div>
+{{/each}}
