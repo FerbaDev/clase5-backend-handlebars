@@ -8,6 +8,9 @@ app.engine("handlebars", exphbs.engine()); //le digo a express que cuando encuen
 app.set("view engine", "handlebars"); //aca le decimos que el motor es handlebars
 app.set("views", "./src/views"); //aca le pasamos la ruta para que los encuentre
 
+//configuramos los statics para css y js
+app.use(express.static("./src/public"))
+
 //rutas
 app.use("/", viewsRouter)
 
