@@ -1,7 +1,7 @@
 //importamos el router desde express
 import { Router } from "express";
 const router = Router();
-import { productos } from "../../productos.js";
+import { productos } from "../productos.js";
 
 //rutas
 router.get("/", (req, res) => {
